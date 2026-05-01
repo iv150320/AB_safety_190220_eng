@@ -41,17 +41,17 @@ The architecture of `AB_safety_190220_eng` follows a typical e-learning developm
 
 ```mermaid
 graph TD
-    A[👨‍🏫 Course Developer] --> B(💡 Designs & Builds Interactive E-Learning Content in Articulate Storyline 360);
-    B -- Configures Export --> C[⚙️ Publishes to Web / HTML5 Output (with Mobile Optimization)];
-    C --> D{📂 Repository: AB_safety_190220_eng};
-    D -- Deployment --> E[🌐 Web Server (e.g., Apache, Nginx, or Local HTTP Server)];
-    E --> F[🔗 User Accesses index.html via URL];
-    F --> G[🖥️ Web Browser (Chrome, Firefox, Edge, Safari)];
-    G -- Requests & Loads --> H[📄 HTML Structure (index.html, story.html)];
-    G -- Applies Styling --> I[🎨 CSS Styling (output.min.css, main.min.css, mobile-fonts)];
-    G -- Executes Logic --> J[🧠 JavaScript Runtime (app.min.js, story.js, data.js, frame.js, + Storyline's generated JS)];
-    J -- Renders & Manages --> K[🖼️ Interactive Slides, Graphics & Multimedia (from story_content/, mobile/)];
-    J -- Handles --> L[📊 Basic Analytics / Tracking (via analytics-frame.html, user.js - for progress, completions)];
+    A["👨‍🏫 Course Developer"] --> B("💡 Designs & Builds Interactive E-Learning Content in Articulate Storyline 360");
+    B -- Configures Export --> C["⚙️ Publishes to Web / HTML5 Output (with Mobile Optimization)"];
+    C --> D{"📂 Repository: AB_safety_190220_eng"};
+    D -- Deployment --> E["🌐 Web Server (e.g., Apache, Nginx, or Local HTTP Server)"];
+    E --> F["🔗 User Accesses index.html via URL"];
+    F --> G["🖥️ Web Browser (Chrome, Firefox, Edge, Safari)"];
+    G -- Requests & Loads --> H["📄 HTML Structure (index.html, story.html)"];
+    G -- Applies Styling --> I["🎨 CSS Styling (output.min.css, main.min.css, mobile-fonts)"];
+    G -- Executes Logic --> J["🧠 JavaScript Runtime (app.min.js, story.js, data.js, frame.js, + Storyline's generated JS)"];
+    J -- Renders & Manages --> K["🖼️ Interactive Slides, Graphics & Multimedia (from story_content/, mobile/)"];
+    J -- Handles --> L["📊 Basic Analytics / Tracking (via analytics-frame.html, user.js - for progress, completions)"];
 
     subgraph E-Learning Authoring & Publishing
         A
